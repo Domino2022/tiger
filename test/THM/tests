@@ -1,0 +1,7 @@
+[Tests]
+  [./3D_Thermo_Hydro_Mechanics_Kozeny_Carman]
+    type = 'Exodiff'
+    input = '3d_THM_T_P.i'
+    exodiff = '3d_THM_T_P_out.e'
+  [../]
+[]

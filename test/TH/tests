@@ -1,0 +1,37 @@
+[Tests]
+  [./1D_Advection]
+    type = 'Exodiff'
+    input = '1d_A.i'
+    exodiff = '1d_A_out.e'
+  [../]
+  [./1D_AdvectionDiffusion_Transient]
+    type = 'Exodiff'
+    input = '1d_AD_T.i'
+    exodiff = '1d_AD_T_out.e'
+  [../]
+  [./1D_AdvectionDiffusion_WithOut_SUPG]
+    type = 'Exodiff'
+    input = '1d_AD_WO_SUPG.i'
+    exodiff = '1d_AD_WO_SUPG_out.e'
+  [../]
+  [./1D_AdvectionDiffusion_WithOutSource]
+    type = 'Exodiff'
+    input = '1d_AD_WOS.i'
+    exodiff = '1d_AD_WOS_out.e'
+  [../]
+  [./1D_AdvectionDiffusion_WithSource]
+    type = 'Exodiff'
+    input = '1d_AD_WS.i'
+    exodiff = '1d_AD_WS_out.e'
+  [../]
+  [./2D_Advection]
+    type = 'Exodiff'
+    input = '2d_A.i'
+    exodiff = '2d_A_out.e'
+  [../]
+  [./2D_AdvectionDiffusion_WithOutSource]
+    type = 'Exodiff'
+    input = '2d_AD_WOS.i'
+    exodiff = '2d_AD_WOS_out.e'
+  [../]
+[]

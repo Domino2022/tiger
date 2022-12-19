@@ -1,0 +1,17 @@
+[Tests]
+  [./1D_Diffusion]
+    type = 'Exodiff'
+    input = '1d_D.i'
+    exodiff = '1d_D_out.e'
+  [../]
+  [./1D_Diffusion_source]
+    type = 'Exodiff'
+    input = '1d_D_S.i'
+    exodiff = '1d_D_S_out.e'
+  [../]
+  [./3D_Diffusion]
+    type = 'Exodiff'
+    input = '3d_D.i'
+    exodiff = '3d_D_out.e'
+  [../]
+[]
